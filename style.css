@@ -160,9 +160,15 @@ section h2::after {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-.service-card .icon {
-  font-size: 3rem;
+.service-card img,
+.portfolio-card img {
+  width: 100%;
+  max-width: 100%;
+  height: 180px;
+  object-fit: cover;      /* crops the photo so it never stretches */
+  border-radius: 12px;
   margin-bottom: 1.5rem;
+  display: block;
 }
 
 .service-card h3, .portfolio-card h3 {
